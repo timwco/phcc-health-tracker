@@ -1,0 +1,5 @@
+body ul.ui-listview li.completed a {
+	color: grey !important;
+	text-decoration: line-through !important;
+    background: #000 !important;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <title>Edit</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.0.min.css">
+    <link rel="stylesheet"  href="css/style.css">
+
+    <link href="apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.0.min.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+    <!-- View -->
+    <div data-role="page" id="view">
+        <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back">
+            <h1>Edit</h1>
+        </div>
+        <div data-role="content">
+            <h3 id="title"></h3>
+            <form id="edit">
+                <input type="hidden" id="id" value="" name="id"/>
+                <textarea id="description" data-id="" class="target" name="description"></textarea>
+                <a id="updateTxt" href="#popupresponse" data-rel="popup" data-transition="pop" class="ui-shadow ui-btn ui-corner-all">Update Text</a>
+            </form>
+            <div data-role="popup" id="popupresponse">
+                <p>Text has been updated!</p>
+            </div>
+        </div>
+    </div>
+    <!-- /View -->
+</body>
+</html>
